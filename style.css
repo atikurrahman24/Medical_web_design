@@ -1,0 +1,506 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px 0px;
+}
+
+/*--------------- Heading Section Starts--------------*/
+.heading-cont{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    gap: 30px;
+    
+}
+.hdiv1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 20px;
+    color: #503217;
+    font-size: 20px;
+    font-weight: 550;
+    transition: all 0.3s ease;
+}
+.hdiv2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 20px;
+}
+.nav-btn button{
+    background: none;
+    border: none;
+    color: #503217;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    padding: 10px 12px;
+}
+/*--------------- Heading Section Ends--------------*/
+
+
+/*--------------- Banner Section Starts--------------*/
+.banner{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    width: 1200px;
+    height: 500px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    background-color: #e8e6de;
+    background-size: cover;
+    background-position: center;
+}
+.banner .ban-text{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 30%;
+    color: #503217;
+    padding-left: 50px;
+}
+.banner .ban-text h1{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.banner .ban-text p{
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.banner .ban-text button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: #503217;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.banner .ban-text button:hover{
+    background-color: #7a4a24;
+}
+.banner .ban-img{
+    position: absolute;
+    padding-right: 50px;
+    right: 0px;
+    width: 30%;
+}
+.banner .ban-img img{
+    width: 100%;
+    height: auto;
+}
+/*--------------- Banner Section Ends--------------*/
+
+
+/*--------------- Product Container Starts--------------*/
+/*--------------- Product Category Starts--------------*/
+.product-cont{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    background-size: cover;
+    background-position: center;
+}
+.prod-head h2{
+    font-size: 30px;
+    font-weight: 600;
+    color: #503217;
+    padding-top: 30px;
+}
+.category{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.cat1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 20px;
+    background-color: #fffdfb;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.cat1:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+.cat1 h5{
+    font-size: 20px;
+    font-weight: 500;
+    color: #834e20;
+    padding-top: 15px;
+}
+.cat1 p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #bd8c6593;
+}
+/*--------------- Product Category Ends--------------*/
+/*--------------- Product Items Starts--------------*/
+.prod-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1100px;
+}
+.prod1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fffdfb;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 20px 20px;
+}
+.type{
+    background-color: #dd7834;
+    font-size: 14px;
+    font-weight: 00;
+    color: white;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    width: fit-content;
+}
+h4{
+    font-size: 18px;
+    font-weight: 600;
+    color: #8f4f18;
+    margin-bottom: 15px;
+}
+.action{
+    color: #ac6d36b6;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.action:hover{
+    border: 1px solid #dfd2af;
+    padding: 2px 5px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+}
+u{
+    color: #ac6d36b6;
+}
+/*--------------- Product Items Ends--------------*/
+/*--------------- Product Container Ends--------------*/
+
+
+/*--------------- Latest Item Container Starts--------------*/
+.latest-cont{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding-top: 50px;
+    background-size: cover;
+    background-position: center;
+}
+.latest-cont .latest-head h2{
+    font-size: 30px;
+    font-weight: 600;
+    color: #7c4f27;
+}
+.latest-cont .latest-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    max-width: 1100px;
+}
+.latest-cont .lat1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fffdfb;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 20px 20px;
+}
+.latest-cont .lat1:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+.latest-cont .lat1 img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.latest-cont .lat1 h4{
+    font-size: 18px;
+    font-weight: 600;
+    color: #70431b;
+    margin-bottom: 10px;
+}
+.latest-cont .lat1 .price{
+    font-size: 16px;
+    font-weight: 400;
+    color: #ac662a;
+    font-weight: 500;
+}
+.latest-cont .lat1 .discount{
+    font-size: 12px;
+    font-weight: 400;
+    color: #e28d4793;
+    margin-top: 10px;
+}
+/*--------------- Latest Item Container Ends--------------*/
+
+
+/*--------------- Clients Section Container Starts--------------*/
+.client-cont{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 50px 0px;
+}
+.client-cont .client-head h2{
+    font-size: 30px;
+    font-weight: 600;
+    color: #7c4f27;
+}
+.client-review{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+    width: 1100px;
+    background-size: cover;
+    background-position: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.client-text{
+    font-size: 18px;
+    font-weight: 400;
+    color: #b9937194;
+    text-align: center;
+    line-height: 1.5;
+    max-width: 900px;
+    padding: 0px 20px;
+}
+/*--------------- Clients Section Container Ends--------------*/
+
+
+/*--------------- Member Section Container Starts--------------*/
+.member-cont{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 0px 20px;
+    padding-bottom: 50px;
+}
+.member1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+.member-img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #e0b892;
+    border-style: dotted;
+}
+.member-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.member1:hover{
+    transform: translateY(-8px);
+}
+.member1 .member-info p{
+    font-size: 18px;
+    font-weight: 500;
+    color: #8d582c98;
+}
+/*--------------- Member Section Container Ends--------------*/
+
+
+/*--------------- Footer Section Container Starts--------------*/
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr 2fr;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 1200px;
+    padding: 20px 30px;
+    background-color: #e2dedc;
+}
+/*--------------- grid1 Starts--------------*/
+.grid1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: right;
+    gap: 10px;
+}
+.footer .grid1 h3{
+    font-size: 20px;
+    font-weight: 600;
+    color: #91643e;
+    margin: 10px 10px;
+}
+.footer .grid1 ul{
+    font-size: 17px;
+    font-weight: 500;
+    color: #91643ec2;
+    margin-bottom: 10px;
+    list-style: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.footer .grid1 ul li{
+    margin-bottom: 13px;
+}
+.footer .grid1 ul li:hover{
+    color: #502b11;
+    text-decoration: underline;
+}
+/*--------------- grid1 Starts--------------*/
+/*--------------- grid2 Starts--------------*/
+.grid2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.grid2 .grid2-sec{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 10px;
+}
+.grid2 .grid2-sec .b-web-logo{
+    width: 40px;
+    height: 40px;
+    transition: all 0.3s ease;
+}
+.grid2 .grid2-sec .b-web-logo img{
+    width: 100%;
+    height: 100%;
+}
+.grid2 .grid2-sec .b-web-name p{
+    font-size: 35px;
+    font-weight: 600;
+    color: #503217;
+}
+.grid2 .grid2-sec .b-web-desc{
+    font-size: 14px;
+    font-weight: 400;
+    color: #503217b3;
+    max-width: 300px;
+    text-align: center;
+    line-height: 1.5;
+}
+.grid2 .grid2-sec .social-logo{
+    display: inline-block;
+    margin: 0 10px;
+    cursor: pointer;
+    color: #503217;
+    transition: all 0.3s ease;
+}
+.grid2 .grid2-sec .social-logo img{
+    width: 30px;
+    height: 30px;
+}
+/*--------------- grid2 Ends--------------*/
+/*--------------- grid3 Starts--------------*/
+.grid3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 70px;
+    padding: 0px 50px;
+}
+.grid3 .grid3-sec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 15px;
+}
+.grid3 .grid3-sec h3{
+    font-size: 20px;
+    font-weight: 600;
+    color: #5a3a20;
+}
+.grid3 .grid3-sec p{
+    font-size: 16px;
+    font-weight: 500;
+    color: #6d4627b7;
+    line-height: 1.5;
+}
+/*--------------- grid3 Ends--------------*/
+/*--------------- Footer Section Container Ends--------------*/
+.bottom-line{
+    width: 1200px;
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #503217b3;
+    background-color: #d4c9c5;
+}
